@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+<div class="bg_pattern Isometric"></div>
+    <style>
+    .bg_pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffe9a7;
+  opacity: 0.4;
+  z-index: -1;
+}
+    .Isometric {
+  background-image:  linear-gradient(30deg, #ffc107 12%, transparent 12.5%, transparent 87%, #ffc107 87.5%, #ffc107), linear-gradient(150deg, #ffc107 12%, transparent 12.5%, transparent 87%, #ffc107 87.5%, #ffc107), linear-gradient(30deg, #ffc107 12%, transparent 12.5%, transparent 87%, #ffc107 87.5%, #ffc107), linear-gradient(150deg, #ffc107 12%, transparent 12.5%, transparent 87%, #ffc107 87.5%, #ffc107), linear-gradient(60deg, #ffc10777 25%, transparent 25.5%, transparent 75%, #ffc10777 75%, #ffc10777), linear-gradient(60deg, #ffc10777 25%, transparent 25.5%, transparent 75%, #ffc10777 75%, #ffc10777);
+  background-size: 40px 70px;
+  background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+}
+
+    h1 {
+    text-align: center;
+    color: #000;
+    font-size: 50px;
+    }
+
+    h1 {
+  position: relative;
+  padding: 1rem 2rem;
+  border: 4px solid #000;
+}
+
+h1:before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  content: '';
+  border: 2px solid #000;
+}
+    p {
+        text-align: center;
+        font-size: 30px;
+    }
+    select {
+        margin:0 auto 0 auto;
+        font-size: 20px;
+    }
+  </style>
+    <title>キーチェッカー</title>
+</head>
+<body>
+<h1>{{ title }}</h1>
+<p>{{ message }}</p>
+<form action="/" method="POST" enctype="multipart/form-data">
+<select name="sel1">
+    <option Value="null" disabled selected>選択して下さい</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="F">F</option>
+    <option value="G">G</option>
+    <option value="A">A</option>
+    <option value="B">B</option><!-- CHECK -->
+</select>
+
+<select name="sel2">
+    <option Value="null" disabled selected>選択して下さい</option>
+    <option ngValue="null"></option>
+    <option value="m">m</option>
+    <option value="♭">♭</option>
+    <option value="#">#</option>
+    <option value="#m">#m</option><!-- CHECK -->
+</select>
+
+<div>
+<select name="sel3">
+    <option Value="null" disabled selected>選択して下さい</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="F">F</option>
+    <option value="G">G</option>
+    <option value="A">A</option>
+    <option value="B">B</option><!-- CHECK -->
+</select>
+
+<select name="sel4">
+    <option Value="null" disabled selected>選択して下さい</option>
+    <option ngValue="null"></option>
+    <option value="m">m</option>
+    <option value="♭">♭</option>
+    <option value="#">#</option>
+    <option value="#m">#m</option><!-- CHECK -->
+</select>
+</div>
+
+<div>
+<select name="sel5">
+    <option Value="null" disabled selected>選択して下さい</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="F">F</option>
+    <option value="G">G</option>
+    <option value="A">A</option>
+    <option value="B">B</option><!-- CHECK -->
+</select>
+
+<select name="sel6">
+    <option Value="null" disabled selected>選択して下さい</option>
+    <option ngValue="null"></option>
+    <option value="m">m</option>
+    <option value="♭">♭</option>
+    <option value="#">#</option>
+    <option value="#m">#m</option><!-- CHECK -->
+</select>
+</div>
+
+<div>
+<select name="sel7">
+    <option Value="null" disabled selected>選択して下さい</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="F">F</option>
+    <option value="G">G</option>
+    <option value="A">A</option>
+    <option value="B">B</option><!-- CHECK -->
+</select>
+
+<select name="sel8">
+    <option Value="null" disabled selected>選択して下さい</option>
+    <option ngValue="null"></option>
+    <option value="m">m</option>
+    <option value="♭">♭</option>
+    <option value="#">#</option>
+    <option value="#m">#m</option><!-- CHECK -->
+</select>
+</div>
+
+<div>
+<select name="sel9">
+    <option Value="null" disabled selected>選択して下さい</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="F">F</option>
+    <option value="G">G</option>
+    <option value="A">A</option>
+    <option value="B">B</option><!-- CHECK -->
+</select>
+
+<select name="sel8">
+    <option Value="null" disabled selected>選択して下さい</option>
+    <option ngValue="null"></option>
+    <option value="m">m</option>
+    <option value="♭">♭</option>
+    <option value="#">#</option>
+    <option value="#m">#m</option><!-- CHECK -->
+</select>
+</div>
+
+<div>
+<select name="sel11">
+    <option Value="null" disabled selected>選択して下さい</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="F">F</option>
+    <option value="G">G</option>
+    <option value="A">A</option>
+    <option value="B">B</option><!-- CHECK -->
+</select>
+
+<select name="sel8">
+    <option Value="null" disabled selected>選択して下さい</option>
+    <option ngValue="null"></option>
+    <option value="m">m</option>
+    <option value="♭">♭</option>
+    <option value="#">#</option>
+    <option value="#m">#m</option><!-- CHECK -->
+</select>
+</div>
+
+<div>
+    <input type="submit" value="送信">
+</div>
+</form>
+</body>
+</html>
